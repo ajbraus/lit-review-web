@@ -2,10 +2,29 @@
 
 A professional, SEO-optimized static website for the LitReview Mac App Store application.
 
-## Features
+## About LitReview
+
+LitReview is a Mac app that searches Google Scholar and allows you to sort results by relevance, total citations, annual citations, author, and more. It works seamlessly with citation management systems like Zotero.
+
+**What LitReview Does:**
+- Searches using Google Scholar
+- Sorts by relevance, total citations, annual citations, author, and more
+- Integrates with Zotero and other citation managers
+
+**What LitReview Doesn't Do:**
+- Organize research papers
+- Provide systematic review tools
+- Manage citations
+- Note-taking
+- Synthesis
+- Export and reporting
+
+LitReview is designed to work together with a citation management system like Zotero for a complete research workflow.
+
+## Website Features
 
 - **Bootstrap 5.3.2** - Modern, responsive design
-- **SEO Optimized** - Title, meta tags, and content optimized for academic literature review keywords
+- **SEO Optimized** - Title, meta tags, and content optimized for Google Scholar search keywords
 - **Schema.org Markup** - Structured data for better search engine understanding
 - **Open Graph Tags** - Optimized social media sharing
 - **Mobile Responsive** - Works perfectly on all devices
@@ -13,16 +32,16 @@ A professional, SEO-optimized static website for the LitReview Mac App Store app
 
 ## Key SEO Keywords Targeted
 
-- Literature review
-- Academic research
-- Systematic review
+- Google Scholar
+- Academic search
+- Citation sorting
 - Research papers
-- Citation management
-- Academic writing
 - Scholarly research
-- Meta-analysis
-- Research methodology
-- Bibliography management
+- Zotero integration
+- Literature search
+- Academic research
+- Mac app
+- Research tool
 
 ## How to Use
 
