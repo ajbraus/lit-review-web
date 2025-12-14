@@ -113,3 +113,50 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', trackAppStoreClick);
     });
 });
+
+/**
+ * Fullscreen Image Modal Functionality
+ */
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('fullscreenModal');
+    const modalImg = document.getElementById('fullscreenImage');
+    const closeBtn = document.querySelector('.close-modal');
+    const featureContainers = document.querySelectorAll('.feature-image-container');
+
+    // Open modal when clicking on feature image containers
+    featureContainers.forEach(container => {
+        container.addEventListener('click', function() {
+            const img = this.querySelector('.feature-image');
+            modal.style.display = 'block';
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+            // Prevent body scrolling when modal is open
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    // Close modal when clicking the X button
+    closeBtn.addEventListener('click', function() {
+        closeModal();
+    });
+
+    // Close modal when clicking outside the image
+    modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Close modal when pressing Escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && modal.style.display === 'block') {
+            closeModal();
+        }
+    });
+
+    // Function to close the modal
+    function closeModal() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+});

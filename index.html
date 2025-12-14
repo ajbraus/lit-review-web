@@ -135,11 +135,70 @@
                     </ul>
                 </div>
                 <div class="col-lg-12 text-center mt-4">
-                    <img src="imgs/shot.png" class='img-fluid'/>
+                    <div class="feature-image-container" style="display: inline-block; max-width: 100%;">
+                        <img src="imgs/shot.png" class="feature-image img-fluid" alt="LitReview Application Screenshot"/>
+                        <div class="feature-overlay">
+                            <i class="bi bi-zoom-in"></i> Click to enlarge
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Feature Showcase Section -->
+    <section class="feature-showcase py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold">Key Features</h2>
+                <p class="lead text-muted">Click any image to view in full screen</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-showcase-card">
+                        <h3 class="h4 mt-3 text-center">Search</h3>
+                        <div class="feature-image-container">
+                            <img src="imgs/feature-search.png" alt="Search Feature" class="feature-image img-fluid" data-feature="search">
+                            <div class="feature-overlay">
+                                <i class="bi bi-zoom-in"></i> Click to enlarge
+                            </div>
+                        </div>
+                        <p class="text-muted text-center">Powerful search capabilities across Google Scholar</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-showcase-card">
+                        <h3 class="h4 mt-3 text-center">Sort</h3>
+                        <div class="feature-image-container">
+                            <img src="imgs/feature-sort.png" alt="Sort Feature" class="feature-image img-fluid" data-feature="sort">
+                            <div class="feature-overlay">
+                                <i class="bi bi-zoom-in"></i> Click to enlarge
+                            </div>
+                        </div>
+                        <p class="text-muted text-center">Sort by citations, relevance, author, and more</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-showcase-card">
+                        <h3 class="h4 mt-3 text-center">Organize Searches</h3>
+                        <div class="feature-image-container">
+                            <img src="imgs/feature-organize.png" alt="Organize Searches Feature" class="feature-image img-fluid" data-feature="organize">
+                            <div class="feature-overlay">
+                                <i class="bi bi-zoom-in"></i> Click to enlarge
+                            </div>
+                        </div>
+                        <p class="text-muted text-center">Save and organize your searches into folders</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fullscreen Modal -->
+    <div id="fullscreenModal" class="fullscreen-modal">
+        <span class="close-modal">&times;</span>
+        <img class="fullscreen-modal-content" id="fullscreenImage" alt="Feature preview">
+    </div>
 
     <!-- Use Cases Section -->
     <section class="py-5">
