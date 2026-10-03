@@ -1,13 +1,53 @@
 /* LitReview Website Styles */
 
+/* Elton University brand colors (https://www.elton.university) */
 :root {
-    --primary-color: #0066cc;
-    --secondary-color: #004999;
-    --accent-color: #f8f9fa;
+    --primary-color: #c8202f;
+    --primary-color-rgb: 200, 32, 47;
+    --secondary-color: #a31926;
+    --secondary-color-rgb: 163, 25, 38;
+    --accent-color: #f7f5f2;
+    --footer-bg: #111;
+
+    /* Point Bootstrap's primary at the brand color */
+    --bs-primary: var(--primary-color);
+    --bs-primary-rgb: var(--primary-color-rgb);
+    --bs-link-color: var(--primary-color);
+    --bs-link-color-rgb: var(--primary-color-rgb);
+    --bs-link-hover-color: var(--secondary-color);
+    --bs-link-hover-color-rgb: var(--secondary-color-rgb);
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--primary-color);
+    --bs-btn-border-color: var(--primary-color);
+    --bs-btn-hover-bg: var(--secondary-color);
+    --bs-btn-hover-border-color: var(--secondary-color);
+    --bs-btn-active-bg: var(--secondary-color);
+    --bs-btn-active-border-color: var(--secondary-color);
 }
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* "Built by Elton University" header link */
+.built-by {
+    margin-left: 0.75rem;
+    padding-left: 0.75rem;
+    border-left: 1px solid #e3ded8;
+    font-size: 0.85rem;
+    color: #555;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.built-by strong {
+    color: var(--primary-color);
+}
+
+.built-by:hover strong {
+    color: var(--secondary-color);
 }
 
 /* Hero Section */
@@ -84,7 +124,7 @@ body {
 
 /* Footer */
 footer {
-    background-color: #212529;
+    background-color: var(--footer-bg);
     color: white;
     padding: 30px 0;
 }
@@ -124,7 +164,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 102, 204, 0.9);
+    background-color: rgba(var(--primary-color-rgb), 0.9);
     color: white;
     display: flex;
     align-items: center;
@@ -198,6 +238,16 @@ footer {
 }
 
 /* Responsive Design */
+@media (max-width: 575.98px) {
+    .built-by {
+        margin-left: 0;
+        padding-left: 0.5rem;
+        font-size: 0.75rem;
+        white-space: normal;
+        line-height: 1.2;
+    }
+}
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem;
