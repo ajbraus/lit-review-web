@@ -1,12 +1,11 @@
 /* LitReview Website Styles */
 
-/* Elton University brand colors (https://www.elton.university) */
 :root {
-    --primary-color: #c8202f;
-    --primary-color-rgb: 200, 32, 47;
-    --secondary-color: #a31926;
-    --secondary-color-rgb: 163, 25, 38;
-    --accent-color: #f7f5f2;
+    --primary-color: #0066cc;
+    --primary-color-rgb: 0, 102, 204;
+    --secondary-color: #004999;
+    --secondary-color-rgb: 0, 73, 153;
+    --accent-color: #f8f9fa;
     --footer-bg: #111;
 
     /* Point Bootstrap's primary at the brand color */
@@ -35,7 +34,7 @@ body {
 .built-by {
     margin-left: 0.75rem;
     padding-left: 0.75rem;
-    border-left: 1px solid #e3ded8;
+    border-left: 1px solid #dee2e6;
     font-size: 0.85rem;
     color: #555;
     text-decoration: none;
@@ -113,6 +112,33 @@ body {
 /* Benefits Section */
 .benefits-section {
     background-color: var(--accent-color);
+}
+
+/* Elton University Degrees Section */
+.degrees-section {
+    background-color: var(--accent-color);
+}
+
+.degree-card {
+    height: 100%;
+    border: none;
+    border-top: 4px solid var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.degree-card:hover {
+    transform: translateY(-5px);
+}
+
+.degree-card .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.degree-card ul {
+    flex-grow: 1;
 }
 
 /* CTA Section */
