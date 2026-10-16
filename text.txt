@@ -1,0 +1,9 @@
+
+
+mac download link: https://lit-review-app-releases.s3.us-west-1.amazonaws.com/releases/darwin/LitReview-1.1.1-arm64.dmg 
+
+License Key
+4A02-0698-BE11-969A
+
+
+Windows download link: https://lit-review-app-releases.s3.us-west-1.amazonaws.com/releases/win32/LitReview+Setup+1.1.1.exe

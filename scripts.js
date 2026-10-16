@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
         container.addEventListener('click', function() {
             const img = this.querySelector('.feature-image');
             modal.style.display = 'block';
-            modalImg.src = img.src;
+            modalImg.src = img.currentSrc || img.src;
             modalImg.alt = img.alt;
             // Prevent body scrolling when modal is open
             document.body.style.overflow = 'hidden';

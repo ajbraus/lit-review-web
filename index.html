@@ -23,17 +23,25 @@
     <meta name="keywords" content="google scholar, academic search, research papers, citation sorting, scholarly research, Mac/Windows, research tool, literature search, academic research">
     <meta name="author" content="Elton University">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://litreviewapp.com/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="LitReview - Desktop Academic Search Application">
     <meta property="og:description" content="Search Google Scholar and sort by relevance, citations, author, and more. Works well together with citation managers.">
-    <meta property="og:url" content="https://www.litreview.app">
+    <meta property="og:url" content="https://litreviewapp.com/">
+    <meta property="og:site_name" content="LitReview">
+    <meta property="og:image" content="https://litreviewapp.com/imgs/shot.png">
+    <meta property="og:image:width" content="1595">
+    <meta property="og:image:height" content="797">
+    <meta property="og:image:alt" content="LitReview app showing Google Scholar results sorted by citations">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="LitReview - Desktop Academic Search Application">
     <meta name="twitter:description" content="Search Google Scholar and sort by relevance, citations, author, and more. Works well together with citation managers.">
+    <meta name="twitter:image" content="https://litreviewapp.com/imgs/shot.png">
+    <meta name="twitter:image:alt" content="LitReview app showing Google Scholar results sorted by citations">
 
     <!-- Standard Favicon -->
     <link rel="icon" type="image/x-icon" href="imgs/icons/favicon.ico">
@@ -58,7 +66,7 @@
     <!-- Additional iOS Meta Tags -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Your App Name">
+    <meta name="apple-mobile-web-app-title" content="LitReview">
 
     <!-- Shortcut Icon (Legacy) -->
     <link rel="shortcut icon" href="imgs/icons/favicon.ico">
@@ -81,7 +89,9 @@
       "name": "LitReview",
       "operatingSystem": ["macOS", "Windows"],
       "applicationCategory": "ProductivityApplication",
-      "url": "https://litreviewapp.com",
+      "url": "https://litreviewapp.com/",
+      "image": "https://litreviewapp.com/imgs/shot.png",
+      "screenshot": "https://litreviewapp.com/imgs/shot.png",
       "offers": {
         "@type": "Offer",
         "price": "29.99",
@@ -107,7 +117,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold fs-3 p-0" href="#">
-                <img src="imgs/logo.png" width="65" />LitReview
+                <img src="imgs/logo.png" width="65" height="65" alt="LitReview logo" />LitReview
                  <!-- <i class="bi bi-journal-text text-primary"></i> -->
             </a>
             <a class="built-by me-auto" href="https://www.elton.university" target="_blank" rel="noopener">Built by <strong>Elton University</strong></a>
@@ -116,6 +126,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#demo">Demo</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#benefits">Benefits</a>
                     </li>
@@ -163,6 +176,21 @@
         </div>
     </section>
 
+    <!-- Demo Video Section -->
+    <section id="demo" class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="display-6 fw-bold">See LitReview in Action</h2>
+                <p class="lead text-muted">Watch a quick demo of searching and sorting Google Scholar results</p>
+            </div>
+            <div class="col-lg-10 offset-lg-1">
+                <div class="ratio ratio-16x9 rounded shadow overflow-hidden">
+                    <iframe src="https://www.youtube-nocookie.com/embed/C1mz7fl7M7A" title="LitReview demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Benefits Section -->
     <section id="benefits" class="benefits-section py-5">
         <div class="container">
@@ -193,7 +221,10 @@
                     </ul>
                 </div>
                 <div class="col-lg-12 text-center mt-4">
-                    <img src="imgs/shot.png" class='img-fluid'/>
+                    <picture>
+                        <source srcset="imgs/shot.webp" type="image/webp">
+                        <img src="imgs/shot.png" class="img-fluid" width="1595" height="797" loading="lazy" alt="LitReview app showing Google Scholar search results sorted by citations">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -252,7 +283,10 @@
                     <div class="feature-showcase-card">
                         <h3 class="h4 mt-3 text-center">Search</h3>
                         <div class="feature-image-container">
-                            <img src="imgs/feature-search.png" alt="Search Feature" class="feature-image img-fluid" data-feature="search">
+                            <picture>
+                                <source srcset="imgs/feature-search.webp" type="image/webp">
+                                <img src="imgs/feature-search.png" alt="LitReview Google Scholar search screen" class="feature-image img-fluid" data-feature="search" width="486" height="437" loading="lazy">
+                            </picture>
                             <div class="feature-overlay">
                                 <i class="bi bi-zoom-in"></i> Click to enlarge
                             </div>
@@ -264,7 +298,10 @@
                     <div class="feature-showcase-card">
                         <h3 class="h4 mt-3 text-center">Sort</h3>
                         <div class="feature-image-container">
-                            <img src="imgs/feature-sort.png" alt="Sort Feature" class="feature-image img-fluid" data-feature="sort">
+                            <picture>
+                                <source srcset="imgs/feature-sort.webp" type="image/webp">
+                                <img src="imgs/feature-sort.png" alt="LitReview sorting results by citations, relevance, and author" class="feature-image img-fluid" data-feature="sort" width="1008" height="574" loading="lazy">
+                            </picture>
                             <div class="feature-overlay">
                                 <i class="bi bi-zoom-in"></i> Click to enlarge
                             </div>
@@ -276,7 +313,10 @@
                     <div class="feature-showcase-card">
                         <h3 class="h4 mt-3 text-center">Organize Searches</h3>
                         <div class="feature-image-container">
-                            <img src="imgs/feature-organize.png" alt="Organize Searches Feature" class="feature-image img-fluid" data-feature="organize">
+                            <picture>
+                                <source srcset="imgs/feature-organize.webp" type="image/webp">
+                                <img src="imgs/feature-organize.png" alt="LitReview saved searches organized into folders" class="feature-image img-fluid" data-feature="organize" width="738" height="542" loading="lazy">
+                            </picture>
                             <div class="feature-overlay">
                                 <i class="bi bi-zoom-in"></i> Click to enlarge
                             </div>
@@ -308,7 +348,7 @@
                         <div class="card-body text-center">
                             <i class="bi bi-search feature-icon"></i>
                             <h3 class="h4 mb-3">Google Scholar Search</h3>
-                            <p class="text-muted">Search the vast database of Google Scholar directly from your Mac, accessing millions of scholarly articles and papers.</p>
+                            <p class="text-muted">Search the vast database of Google Scholar directly from your Mac or Windows PC, accessing millions of scholarly articles and papers.</p>
                         </div>
                     </div>
                 </div>
@@ -358,7 +398,7 @@
                         <div class="card-body text-center">
                             <i class="bi bi-link-45deg feature-icon"></i>
                             <h3 class="h4 mb-3">Works Together with Other Tools</h3>
-                            <p class="text-muted">Use LitReview with other tools like Zotero and Medeley and other citation management systems for your complete research workflow.</p>
+                            <p class="text-muted">Use LitReview with other tools like Zotero, Mendeley, and other citation management systems for your complete research workflow.</p>
                         </div>
                     </div>
                 </div>
@@ -436,7 +476,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mb-3 mb-md-0">
-                    <h5><img src="imgs/logo-white.png" width="40"/>LitReview</h5>
+                    <h5><img src="imgs/logo-white.png" width="40" height="40" alt="LitReview logo" loading="lazy"/>LitReview</h5>
                         <!-- <i class="bi bi-journal-text"></i>  -->
 
                     <p class="text-muted">Academic search and sorting tool for Mac and Windows.</p>
@@ -452,7 +492,7 @@
             </div>
             <hr class="bg-light">
             <div class="text-center text-muted">
-                <p>&copy; 2025 LitReview, built by <a href="https://www.elton.university" target="_blank" rel="noopener" class="text-white-50">Elton University</a>. All rights reserved.</p>
+                <p>&copy; 2026 LitReview, built by <a href="https://www.elton.university" target="_blank" rel="noopener" class="text-white-50">Elton University</a>. All rights reserved.</p>
             </div>
         </div>
     </footer>
