@@ -19,7 +19,7 @@
     <title>LitReview - Desktop Academic Search Application</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="LitReview is a desktop application for searching and sorting academic literature using Google Scholar. Sort by relevance, citations, author, and more. Works well together with citation managers.">
+    <meta name="description" content="LitReview is a free desktop app for Mac and Windows for searching and sorting academic literature using Google Scholar. Sort by relevance, citations, author, and more. Works well together with citation managers.">
     <meta name="keywords" content="google scholar, academic search, research papers, citation sorting, scholarly research, Mac/Windows, research tool, literature search, academic research">
     <meta name="author" content="Elton University">
     <meta name="robots" content="index, follow">
@@ -28,7 +28,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="LitReview - Desktop Academic Search Application">
-    <meta property="og:description" content="Search Google Scholar and sort by relevance, citations, author, and more. Works well together with citation managers.">
+    <meta property="og:description" content="Free for Mac and Windows. Search Google Scholar and sort by relevance, citations, author, and more. Works well together with citation managers.">
     <meta property="og:url" content="https://litreviewapp.com/">
     <meta property="og:site_name" content="LitReview">
     <meta property="og:image" content="https://litreviewapp.com/imgs/shot.png">
@@ -39,7 +39,7 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="LitReview - Desktop Academic Search Application">
-    <meta name="twitter:description" content="Search Google Scholar and sort by relevance, citations, author, and more. Works well together with citation managers.">
+    <meta name="twitter:description" content="Free for Mac and Windows. Search Google Scholar and sort by relevance, citations, author, and more. Works well together with citation managers.">
     <meta name="twitter:image" content="https://litreviewapp.com/imgs/shot.png">
     <meta name="twitter:image:alt" content="LitReview app showing Google Scholar results sorted by citations">
 
@@ -87,14 +87,14 @@
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "LitReview",
-      "operatingSystem": ["macOS", "Windows"],
+      "operatingSystem": ["macOS (Apple silicon)", "Windows"],
       "applicationCategory": "ProductivityApplication",
       "url": "https://litreviewapp.com/",
       "image": "https://litreviewapp.com/imgs/shot.png",
       "screenshot": "https://litreviewapp.com/imgs/shot.png",
       "offers": {
         "@type": "Offer",
-        "price": "29.99",
+        "price": "0",
         "priceCurrency": "USD"
       },
       "description": "Google Scholar search and sorting tool for Mac/Windows. Works with citation managers.",
@@ -156,19 +156,15 @@
                 <h1>LitReview | Search and Sort Academic Sources Fast</h1>
                 <p class="lead mb-4">LitReview was built for and by academics. It is a powerful, private, and secure tool for conducting academic searches. It uses Google Scholar and empowers you to sort results by relevance, total citations, annual citations, author, and more.</p>
                 <br/>
-
-                <script async
-                  src="https://js.stripe.com/v3/buy-button.js">
-                </script>
-
-                <stripe-buy-button
-                  buy-button-id="buy_btn_1UE9URPmOOSAVrPCp0HJUym2"
-                  publishable-key="pk_live_51SdeqPPmOOSAVrPCsbPv05EelM28VX1zDMUgpWZGKq5MFfWJZfsFuCYMxOATXJkjFOLXUQK8OFmQIYDRtefL1woN009ytpfE8Y"
-                >
-                </stripe-buy-button>
-                <br/>
-                <small>Available for Mac and Windows</small>
-                <small>Free Updates</small>
+                <form class="signup-form mx-auto" action="https://www.elton.university/litreview/signup" method="post">
+                    <div class="input-group input-group-lg">
+                        <input type="email" name="email" class="form-control" placeholder="you@university.edu" autocomplete="email" required aria-label="Email address">
+                        <button class="btn btn-light fw-semibold" type="submit">Get It Free</button>
+                    </div>
+                    <input type="text" name="website" class="signup-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+                    <div class="signup-alert" role="alert"></div>
+                    <p class="signup-note">We'll email you download links for Windows and Mac (Apple silicon, M1 or later). Elton University may occasionally email you about LitReview and its programs; unsubscribe anytime. See our <a href="privacy.html">privacy policy</a>.</p>
+                </form>
                 <!-- <a href="https://apps.apple.com/app/litreview"> -->
                 <!-- <img src="imgs/mac.svg" class="img-fluid" width="250px" alt="">     -->
                 <!-- </a>     -->
@@ -451,20 +447,18 @@
     <!-- CTA Section -->
     <section id="download" class="cta-section text-center">
         <div class="container">
-            <h2 class="display-5 fw-bold mb-4">Start Searching Smarter Today</h2>
-            <p class="lead mb-4">Find the most relevant research faster with Google Scholar search and advanced sorting</p>
+            <h2 class="display-5 fw-bold mb-4">Get LitReview Free</h2>
+            <p class="lead mb-4">Enter your email and we'll send you the download links and your license key.</p>
 
-            <stripe-buy-button
-              buy-button-id="buy_btn_1UE9URPmOOSAVrPCp0HJUym2"
-              publishable-key="pk_live_51SdeqPPmOOSAVrPCsbPv05EelM28VX1zDMUgpWZGKq5MFfWJZfsFuCYMxOATXJkjFOLXUQK8OFmQIYDRtefL1woN009ytpfE8Y"
-            >
-            </stripe-buy-button>
-            <br/>
-            <!-- <p>
-                <a href="https://buy.stripe.com/4gM4gB1nKaJu1Hg0ES2oE00" class="btn btn-lg btn-light" target="_blank">Pay & Download Now</a>    
-            </p> -->
-            
-            <small>Available for Mac and Windows</small>
+            <form class="signup-form mx-auto" action="https://www.elton.university/litreview/signup" method="post">
+                    <div class="input-group input-group-lg">
+                        <input type="email" name="email" class="form-control" placeholder="you@university.edu" autocomplete="email" required aria-label="Email address">
+                        <button class="btn btn-light fw-semibold" type="submit">Get It Free</button>
+                    </div>
+                    <input type="text" name="website" class="signup-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+                    <div class="signup-alert" role="alert"></div>
+                    <p class="signup-note">We'll email you download links for Windows and Mac (Apple silicon, M1 or later). Elton University may occasionally email you about LitReview and its programs; unsubscribe anytime. See our <a href="privacy.html">privacy policy</a>.</p>
+                </form>
             <!-- <a href="https://apps.apple.com/app/litreview">
                 <img src="imgs/mac.svg" class="img-fluid" width="250px" alt="">    
             </a>    --> 

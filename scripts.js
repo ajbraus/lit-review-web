@@ -160,3 +160,21 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = 'auto';
     }
 });
+
+// Free download signup: the form posts to elton.university, which redirects back here with ?signup=<problem>
+document.addEventListener('DOMContentLoaded', function() {
+    const messages = {
+        invalid: 'Please enter a valid email address.',
+        limit: 'Too many attempts. Please wait a few minutes and try again.',
+        error: 'Something went wrong sending your email. Please try again, or email hello@elton.university.'
+    };
+    const problem = new URLSearchParams(window.location.search).get('signup');
+    const ctaAlert = document.querySelector('#download .signup-alert');
+    if (messages[problem] && ctaAlert) ctaAlert.textContent = messages[problem];
+
+    document.querySelectorAll('.signup-form').forEach(function(form) {
+        form.addEventListener('submit', function() {
+            if (typeof gtag === 'function') gtag('event', 'sign_up', { method: 'litreview_download' });
+        });
+    });
+});
