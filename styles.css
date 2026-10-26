@@ -365,3 +365,13 @@ footer {
         flex-direction: column;
     }
 }
+
+/* Publish or Perish comparison table */
+.compare-table th[scope="row"] {
+    font-weight: 600;
+    width: 34%;
+}
+
+.compare-table thead th:nth-child(2) {
+    color: var(--primary-color);
+}

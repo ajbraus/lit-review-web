@@ -122,6 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalImg = document.getElementById('fullscreenImage');
     const closeBtn = document.querySelector('.close-modal');
     const featureContainers = document.querySelectorAll('.feature-image-container');
+    if (!modal) return;
 
     // Open modal when clicking on feature image containers
     featureContainers.forEach(container => {
