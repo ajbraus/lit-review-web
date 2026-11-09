@@ -375,3 +375,15 @@ footer {
 .compare-table thead th:nth-child(2) {
     color: var(--primary-color);
 }
+
+/* LitReview MCP invite */
+.mcp-invite {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.mcp-invite a {
+    color: white;
+    font-weight: 600;
+    text-decoration: underline;
+}
